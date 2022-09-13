@@ -11,7 +11,7 @@ gem "middleman-syntax"
 
 ## Template engines
 gem "builder"
-gem "haml", "~> 5.2.2"
+gem "haml", ">= 6.0.0.beta.2"
 gem "kramdown"
 
 # Rake tasks
@@ -27,6 +27,6 @@ group :development do
   gem "pry"
   gem "pry-byebug"
 
-  gem "haml_lint", "~> 0.40"
+  gem "haml_lint", github: "sds/haml-lint", branch: "main"
   gem "rubocop"
 end
